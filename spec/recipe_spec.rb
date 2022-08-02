@@ -2,7 +2,7 @@ require './lib/recipe'
 require './lib/ingredient'
 
 RSpec.describe Recipe do
-  context 'Iteration 1' do
+  context 'Iteration 1-2' do
     before :each do
       @ingredient1 = Ingredient.new({name: "Cheese", unit: "C", calories: 100})
       @ingredient2 = Ingredient.new({name: "Macaroni", unit: "oz", calories: 30})
@@ -33,7 +33,7 @@ RSpec.describe Recipe do
     end
   end
 
-  context 'Iteration 2' do
+  context 'Iteration 3' do
     before :each do
       ingredient1 = Ingredient.new({name: "Cheese", unit: "C", calories: 100})
       ingredient2 = Ingredient.new({name: "Macaroni", unit: "oz", calories: 30})
@@ -52,4 +52,5 @@ RSpec.describe Recipe do
       expect(@recipe1.total_calories).to eq(440)
       expect(@recipe2.total_calories).to eq(675)
     end
+  end
 end
