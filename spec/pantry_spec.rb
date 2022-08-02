@@ -8,7 +8,7 @@ RSpec.describe Pantry do
   end
 
   it 'has stock' do
-    expect(@pantry.stock).to be_an Array
+    expect(@pantry.stock).to be_a Hash
     expect(@pantry.stock).to be_empty
   end
 
